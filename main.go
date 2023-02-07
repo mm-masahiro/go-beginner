@@ -23,5 +23,15 @@ func main() {
 	var a [2][3]int
 
 	fmt.Println(a)
+
+	var s = []int{10,20,30}
+	fmt.Println(s)
+	s = append(s, 40)
+	fmt.Println(s)
+	s = append(s, s...)
+	fmt.Println(s)
+
+	sWithCap := make([]int, 5)
+	fmt.Println(sWithCap)
 }
 
