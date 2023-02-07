@@ -19,6 +19,9 @@ func main() {
 
 	fmt.Println(x)
 	fmt.Println(y)
+	
+	var a [2][3]int
 
+	fmt.Println(a)
 }
 
