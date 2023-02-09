@@ -33,5 +33,17 @@ func main() {
 
 	sWithCap := make([]int, 5)
 	fmt.Println(sWithCap)
+
+	var nilMap map[string]int
+	fmt.Println(nilMap["a"])
+
+	teams := map[string][]string {
+		"team1": []string{"hoge", "foo" },
+		"team2": []string{"ho", "foooooo"},
+	}
+	fmt.Println(teams["team1"])
+
+	delete(teams, "team2")
+	fmt.Println(teams)
 }
 
