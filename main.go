@@ -45,5 +45,29 @@ func main() {
 
 	delete(teams, "team2")
 	fmt.Println(teams)
+
+	type person struct {
+		name string
+		age int
+		pet string
+	}
+
+	fred := person{
+		name: "fred",
+		age: 23,
+		pet: "dog",
+	}
+
+	pet := struct {
+		name string
+		age int
+	} {
+		name: "hachi",
+		age: 11,
+	}
+
+	fmt.Println(pet)
+
+	fmt.Println(fred)
 }
 
