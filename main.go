@@ -1,73 +1,75 @@
 package main
 
-import "fmt"
+import (
+	blcok "go-beginner/block"
+)
 
 const x int64 = 10
 
 const (
-	idKey = "id"
+	idKey   = "id"
 	nameKey = "name"
 )
 
 const z = 20 * 10
 
 func main() {
-  const y = "Hello"
+	// const y = "Hello"
 
-	fmt.Println(x)
-	fmt.Println(y)
+	// fmt.Println(x)
+	// fmt.Println(y)
 
-	fmt.Println(x)
-	fmt.Println(y)
-	
-	var a [2][3]int
+	// fmt.Println(x)
+	// fmt.Println(y)
 
-	fmt.Println(a)
+	// var a [2][3]int
 
-	var s = []int{10,20,30}
-	fmt.Println(s)
-	s = append(s, 40)
-	fmt.Println(s)
-	s = append(s, s...)
-	fmt.Println(s)
+	// fmt.Println(a)
 
-	sWithCap := make([]int, 5)
-	fmt.Println(sWithCap)
+	// var s = []int{10,20,30}
+	// fmt.Println(s)
+	// s = append(s, 40)
+	// fmt.Println(s)
+	// s = append(s, s...)
+	// fmt.Println(s)
 
-	var nilMap map[string]int
-	fmt.Println(nilMap["a"])
+	// sWithCap := make([]int, 5)
+	// fmt.Println(sWithCap)
 
-	teams := map[string][]string {
-		"team1": []string{"hoge", "foo" },
-		"team2": []string{"ho", "foooooo"},
-	}
-	fmt.Println(teams["team1"])
+	// var nilMap map[string]int
+	// fmt.Println(nilMap["a"])
 
-	delete(teams, "team2")
-	fmt.Println(teams)
+	// teams := map[string][]string {
+	// 	"team1": []string{"hoge", "foo" },
+	// 	"team2": []string{"ho", "foooooo"},
+	// }
+	// fmt.Println(teams["team1"])
 
-	type person struct {
-		name string
-		age int
-		pet string
-	}
+	// delete(teams, "team2")
+	// fmt.Println(teams)
 
-	fred := person{
-		name: "fred",
-		age: 23,
-		pet: "dog",
-	}
+	// type person struct {
+	// 	name string
+	// 	age int
+	// 	pet string
+	// }
 
-	pet := struct {
-		name string
-		age int
-	} {
-		name: "hachi",
-		age: 11,
-	}
+	// fred := person{
+	// 	name: "fred",
+	// 	age: 23,
+	// 	pet: "dog",
+	// }
 
-	fmt.Println(pet)
+	// pet := struct {
+	// 	name string
+	// 	age int
+	// } {
+	// 	name: "hachi",
+	// 	age: 11,
+	// }
 
-	fmt.Println(fred)
+	// fmt.Println(pet)
+
+	// fmt.Println(fred)
+	blcok.Block()
 }
-
