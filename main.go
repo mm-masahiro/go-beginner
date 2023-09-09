@@ -1,7 +1,7 @@
 package main
 
 import (
-	blcok "go-beginner/block"
+	block "go-beginner/block"
 )
 
 const x int64 = 10
@@ -71,5 +71,7 @@ func main() {
 	// fmt.Println(pet)
 
 	// fmt.Println(fred)
-	blcok.Block()
+	// bl.Block()
+	// block.For()
+	block.While()
 }
