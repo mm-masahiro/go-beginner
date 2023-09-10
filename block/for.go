@@ -21,3 +21,11 @@ func While() {
     i = i * 2
   }
 }
+
+func ForRange() {
+  evenVals := []int{2, 4, 6, 8, 10, 12}
+
+  for i, v := range evenVals {
+    fmt.Println(i, v)
+  }
+}

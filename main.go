@@ -73,5 +73,6 @@ func main() {
 	// fmt.Println(fred)
 	// bl.Block()
 	// block.For()
-	block.While()
+	// block.While()
+	block.ForRange()
 }
