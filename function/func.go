@@ -21,3 +21,12 @@ func MyFunc(options FuncOptions) error {
 
 	return nil
 }
+
+func AddTo(base int, values ...int) []int {
+	out := make([]int, 0, len(values))
+	for _, v := range values {
+		out = append(out, base+v)
+	}
+
+	return out
+}

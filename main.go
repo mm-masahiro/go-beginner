@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	function "go-beginner/function"
 )
 
@@ -80,4 +81,10 @@ func main() {
 		LastName: "Hoge",
 		Age:      20,
 	})
+
+	fmt.Println(function.AddTo(3))
+	fmt.Println(function.AddTo(3, 8))
+	fmt.Println(function.AddTo(3, 8, 10))
+	fmt.Println(function.AddTo(3, 8, 10, 23))
+
 }
