@@ -1,7 +1,7 @@
 package main
 
 import (
-	block "go-beginner/block"
+	function "go-beginner/function"
 )
 
 const x int64 = 10
@@ -74,5 +74,10 @@ func main() {
 	// bl.Block()
 	// block.For()
 	// block.While()
-	block.ForRange()
+	// block.ForRange()
+
+	function.MyFunc(function.FuncOptions{
+		LastName: "Hoge",
+		Age:      20,
+	})
 }
