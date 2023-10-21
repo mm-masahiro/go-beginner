@@ -82,9 +82,22 @@ func main() {
 		Age:      20,
 	})
 
-	fmt.Println(function.AddTo(3))
-	fmt.Println(function.AddTo(3, 8))
-	fmt.Println(function.AddTo(3, 8, 10))
-	fmt.Println(function.AddTo(3, 8, 10, 23))
+	function.AddTo(3)
+	function.AddTo(3, 8)
+	function.AddTo(3, 8, 10)
+	function.AddTo(3, 8, 10, 23)
 
+	a := "aaaa"
+	fmt.Println(&a)
+
+	var address_a *string = &a
+
+	// ポインタ変数から値を間接参照
+	fmt.Println(*address_a)
+
+	// ポインタ変数を通して、変数aの値を書き換え
+	*address_a = "bbbb"
+
+	fmt.Println(*address_a)
+	fmt.Println(a)
 }
