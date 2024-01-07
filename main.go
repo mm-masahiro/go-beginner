@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	function "go-beginner/function"
+
+	defers "go-beginner/defer"
 )
 
 const x int64 = 10
@@ -100,4 +102,10 @@ func main() {
 
 	fmt.Println(*address_a)
 	fmt.Println(a)
+
+	// str.Structures()
+
+	defer fmt.Println("exec1 in main")
+	// defers.Defer()
+	defers.MultiDefer()
 }
