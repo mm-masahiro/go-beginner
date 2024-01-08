@@ -3,9 +3,12 @@ package main
 import (
 	"fmt"
 	function "go-beginner/function"
-
-	defers "go-beginner/defer"
 )
+
+type person struct {
+	age  int
+	name string
+}
 
 const x int64 = 10
 
@@ -15,6 +18,13 @@ const (
 )
 
 const z = 20 * 10
+
+func modifyFails(i int, s string, p person) {
+	i *= 2
+	s = "good bye"
+	p.name = "Bob"
+	fmt.Println(p)
+}
 
 func main() {
 	// const y = "Hello"
@@ -105,7 +115,14 @@ func main() {
 
 	// str.Structures()
 
-	defer fmt.Println("exec1 in main")
+	// defer fmt.Println("exec1 in main")
 	// defers.Defer()
-	defers.MultiDefer()
+	// defers.MultiDefer()
+
+	p := person{}
+	i := 2
+	s := "Hello"
+	fmt.Println(i, s, p)
+	modifyFails(i, s, p)
+	fmt.Println(i, s, p)
 }
