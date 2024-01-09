@@ -68,4 +68,19 @@ func main() {
 	s := []int{1, 2, 3}
 	modSlice(s)
 	fmt.Println(s)
+
+	aa := 100
+	pAa := &aa
+	fmt.Println(pAa)
+	fmt.Println(*pAa)
+	fmt.Println(&pAa)
+
+	checkPointer(pAa)
+
+}
+
+func checkPointer(a *int) {
+	fmt.Println(a)
+	fmt.Println(*a)
+	fmt.Println(&a)
 }
