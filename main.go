@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"go-beginner/border"
+	"go-beginner/method"
 )
 
 type person struct {
@@ -57,30 +59,37 @@ func main() {
 	// modifyFails(i, s, p)
 	// fmt.Println(i, s, p)
 
-	m := map[int]string{
-		1: "first",
-		2: "second",
-	}
+	// m := map[int]string{
+	// 	1: "first",
+	// 	2: "second",
+	// }
 
-	modMap(m)
-	fmt.Println(m)
+	// modMap(m)
+	// fmt.Println(m)
 
-	s := []int{1, 2, 3}
-	modSlice(s)
-	fmt.Println(s)
+	// s := []int{1, 2, 3}
+	// modSlice(s)
+	// fmt.Println(s)
 
-	aa := 100
-	pAa := &aa
-	fmt.Println(pAa)
-	fmt.Println(*pAa)
-	fmt.Println(&pAa)
+	// aa := 100
+	// pAa := &aa
+	// fmt.Println(pAa)
+	// fmt.Println(*pAa)
+	// fmt.Println(&pAa)
+	// checkPointer(pAa)
 
-	checkPointer(pAa)
-
+	var c method.Counter
+	fmt.Println(c.Total)
+	// fmt.Println(c.String())
+	// c.Increment()
+	// fmt.Println(c.String())
+	fmt.Println("---------")
+	border.Border()
+	fmt.Println("---------")
 }
 
-func checkPointer(a *int) {
-	fmt.Println(a)
-	fmt.Println(*a)
-	fmt.Println(&a)
-}
+// func checkPointer(a *int) {
+// 	fmt.Println(a)
+// 	fmt.Println(*a)
+// 	fmt.Println(&a)
+// }
